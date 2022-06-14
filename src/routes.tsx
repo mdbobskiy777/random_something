@@ -53,6 +53,11 @@ const routes: RoutesType = [
     element: lazy(() => import('src/pages/converter/Converter')),
   },
   {
+    path: '/movie/:name',
+    layout: MainLayout,
+    element: lazy(() => import('src/pages/movieOverview/MovieOverview')),
+  },
+  {
     path: '*',
     layout: MainLayout,
     element: NotFoundView,
